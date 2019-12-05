@@ -1,4 +1,4 @@
-{% set version = "1.13.2" %}
+{% set version = "1.13.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/htmlTable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/htmlTable/htmlTable_{{ version }}.tar.gz
-  sha256: 70578c3c286460c220c89bf9e953f5ec2ada931d0c9cd530fe2d740a19d5d240
+  sha256: d459c43675f6ee0a1ae8232ea8819b2a842e795a833b28127081fa344d09393d
 
 build:
   merge_build_host: True  # [win]
