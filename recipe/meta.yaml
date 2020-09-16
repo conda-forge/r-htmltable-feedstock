@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/htmlTable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/htmlTable/htmlTable_{{ version }}.tar.gz
-  sha256: 86a97cfa5f02cd62c42ef3c085b2873dd90f1f6cd4b410104fcff52fd5144555
+  sha256: 4049339b317cbec1c8c7930e2e36cf0fc8b002516092dd270bb794d8db02f0bf
 
 build:
   merge_build_host: true  # [win]
@@ -22,7 +22,6 @@ build:
 
 requirements:
   build:
-
   host:
     - r-base
     - r-checkmate
@@ -49,11 +48,12 @@ test:
 
 about:
   home: http://gforge.se/packages/
-  license: GPL (>= 3)
+  license: GPL-3.0-or-later
   summary: Tables with state-of-the-art layout elements such as row spanners, column spanners, table spanners, zebra striping, and more. While allowing advanced layout, the underlying css-structure is simple in order to maximize compatibility with word processors such as 'MS Word' or 'LibreOffice'. The package also contains
     a few text formatting functions that help outputting text compatible with HTML/LaTeX.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
