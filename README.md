@@ -3,7 +3,7 @@ About r-htmltable
 
 Home: http://gforge.se/packages/
 
-Package license: GPL (>= 3)
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD-3-Clause
 
