@@ -1,11 +1,11 @@
-About r-htmltable
-=================
+About r-htmltable-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-htmltable-feedstock/blob/main/LICENSE.txt)
 
 Home: http://gforge.se/packages/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-htmltable-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tables with state-of-the-art layout elements such as row spanners, column spanners, table spanners, zebra striping, and more. While allowing advanced layout, the underlying css-structure is simple in order to maximize compatibility with word processors such as 'MS Word' or 'LibreOffice'. The package also contains a few text formatting functions that help outputting text compatible with HTML/LaTeX.
 
