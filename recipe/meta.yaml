@@ -1,4 +1,4 @@
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/htmlTable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/htmlTable/htmlTable_{{ version }}.tar.gz
-  sha256: 3a7f3e75d886dc398fd1d3cae907b536fff6af3a3d2c18349ef12ec06d310f93
+  sha256: 6a83dd6172c13cad4a74f2660db94565814aaf8500237e2c418216be6db7360d
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
