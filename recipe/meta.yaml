@@ -1,4 +1,4 @@
-{% set version = "2.4.2" %}
+{% set version = "2.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/htmlTable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/htmlTable/htmlTable_{{ version }}.tar.gz
-  sha256: 6a83dd6172c13cad4a74f2660db94565814aaf8500237e2c418216be6db7360d
+  sha256: 3739d01bff313ccd206b63940a8252b037f0521d041c721a4e0d195abd6ef6dd
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
